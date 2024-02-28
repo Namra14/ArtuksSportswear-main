@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link href="css/templatemo-pod-talk.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section>
+        <header class="header">
+            <div class="container-fluid">
+              <div class="row align-items-center">
+                <div class="col-md-3 col-6">
+                  <div class="logo">
+                    <a href="homepage.html"><img src="images/artuks-logo.png" alt="Logo" class="img-fluid"></a>
+                  </div>
+                </div>
+                <div class="col-md-6 col-5">
+                  <div class="search-bar">
+                    <input type="text" class="form-control" placeholder="Search...">
+                  </div>
+                </div>
+                <div class="col-md-3 col-6 text-right"> <!-- Adjusted col-6 for smaller screens -->
+                  <div class="icons">
+                    <i class="fas fa-map-marker-alt loc"></i> <!-- Location Icon -->
+                    <i class="fas fa-comments chat"></i> <!-- Chat Icon -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+          
+        
+          <nav class="navigation">
+              <ul class="nav justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link text-dark text-dark fw-bold fs-4 active" href="homepage.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active text-dark fw-bold fs-4" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark fw-bold fs-4" href="#">Jersey Design</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark fw-bold fs-4" href="#">Sample</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark fw-bold fs-4" href="pricelist.html">Price List</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark fw-bold fs-4" href="gallery.html">Gallery</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark fw-bold fs-4" href="#">Promos</a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+        </section>
+
+        <!--GALLERY-->
+
+        <div class="container-fluid" id="gallery">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="gallery-item">
+                <img src="images/g1.jpg" alt="Image 1">
+                
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="gallery-item">
+                <img src="images/g2.jpg" alt="Image 2">
+                
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="gallery-item">
+                <img src="images/g3.jpg" alt="Image 3">
+                
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="gallery-item">
+                <img src="images/g4.jpg" alt="Image 3">
+                
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="gallery-item">
+                <img src="images/g5.jpg" alt="Image 3">
+                
+              </div>
+            </div><div class="col-md-3">
+              <div class="gallery-item">
+                <img src="images/g6.jpg" alt="Image 3">
+                
+              </div>
+            </div><div class="col-md-3">
+              <div class="gallery-item">
+                <img src="images/g7.jpg" alt="Image 3">
+                
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="gallery-item">
+                <img src="images/g8.jpg" alt="Image 3">
+                
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="gallery-item">
+                <img src="images/g9.jpg" alt="Image 3">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal HTML -->
+        <!-- Modal HTML -->
+        <div id="imageModal" class="modal">
+          <span class="close">&times;</span>
+          <div class="modal-content">
+            <img id="modalImage" class="zoomable" src="">
+          </div>
+        </div>
+
+
+
+        <script src="js/gallery.js"></script>
+</body>
+</html>

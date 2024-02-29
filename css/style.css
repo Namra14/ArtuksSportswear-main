@@ -26,8 +26,9 @@ body{
   }
   @media (max-width: 768px) {
     .logo {
-        width: 120px;
-        margin-left: 5px;
+        width: 100px;
+        margin-left: -10px;
+        padding-right: 10px;
     }
   }
   
@@ -43,7 +44,8 @@ body{
     .search-bar {
         width: 100px;
         height: auto;
-        margin-left: 60px;
+        margin-left: 40px;
+        margin-top: 10px;
     }
     .search-bar ::placeholder{
         font-size: 10px;
@@ -70,9 +72,14 @@ body{
 
 
   @media (max-width: 768px) {
+    .icons{
+      margin-right: 62px;
+      margin-bottom: 10px;
+      margin-top: 5px;
+    }
     .icons i {
-        font-size: 15px;
-        margin-right: 40px;
+        font-size: 10px;
+        margin-right: 8px;
       color: white; /* Change icon color to light gray on smaller screens */
     }
   }
@@ -99,7 +106,7 @@ body{
   }
   @media (max-width: 768px) {
     .navigation ul li a{
-        font-size: 20px;
+        font-size: 15px;
     }
     .navigation ul li a:hover {
       background-color: red;
@@ -221,7 +228,7 @@ body{
   }
   .service-item {
     position: relative; /* Ensure service item is relatively positioned */
-    flex: 0 0 calc(60% - 30px); /* Adjusted width for smaller devices */
+    flex: 0 0 calc(70% - 30px); /* Adjusted width for smaller devices */
     margin: 10px 0;
   }
   .service-item .hover-text {
@@ -250,7 +257,7 @@ body{
     text-align: center;
   }
   .services-title {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
   

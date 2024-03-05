@@ -228,8 +228,8 @@ body{
     font-size: 10px;
   }
   .service-item {
-    position: relative; /* Ensure service item is relatively positioned */
-    flex: 0 0 calc(70% - 30px); /* Adjusted width for smaller devices */
+    position: relative; 
+    flex: 0 0 calc(70% - 30px); 
     margin: 10px 0;
   }
   .service-item .hover-text {
@@ -238,7 +238,7 @@ body{
     left: 0;
     width: 100%;
     height: 100px;
-    background-color: rgba(255, 255, 255, 0.9); /* Background color for hover text */
+    background-color: rgba(255, 255, 255, 0.9); 
     padding: 10px 20px 30px 20px;
     transform: translateY(100%);
     transition: transform 0.3s ease;
@@ -419,7 +419,6 @@ body{
   width: 100%;
   height: auto;
   transition: transform 0.3s ease;
-  border-radius: 20%;
   padding: 20px 0;
 }
 .newdesign-item:hover img {

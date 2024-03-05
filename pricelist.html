@@ -56,7 +56,7 @@
           <a class="nav-link active text-dark fw-bold" href="#">About</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link text-dark fw-bold" href="#">Jersey Design</a>
+            <a class="nav-link text-dark fw-bold" href="newdesign.html">Jersey Design</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-dark fw-bold" href="#">Sample</a>
@@ -73,13 +73,34 @@
       </ul>
     </div>
   </nav>
+  </section>
 
-      <div class="container-fluid" id="price">
-        <div class="pricelist">
-            <img src="images/pl.jpg" alt="">
-        </div>
-        
+
+  <div class="container-fluid">
+    <div id="price-container" class="row">
+      <!-- Image items -->
+      <div class="col-md-3 price-item">
+        <img src="images/pl1.jpg" alt="Price 1">
+      </div>
+      <div class="col-md-3 price-item">
+        <img src="images/pl.jpg" alt="Price 2">
+      </div>
+      <div class="col-md-3 price-item">
+        <img src="images/pl2.jpg" alt="Price 3">
       </div>
       
+      <!-- Add more items as needed -->
+    </div>
+  </div>
+
+      <!-- Modal HTML -->
+      <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+          <img id="modalImage" class="zoomable" src="">
+        </div>
+      </div>
+
+  <script src="js/pricelist.js"></script>
 </body>
 </html>

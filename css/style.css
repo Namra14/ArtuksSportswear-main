@@ -400,23 +400,9 @@ body{
   .modal-content img {
     max-width: 100%;
     max-height: 100%;
+    margin: 0 auto;
   }
   }
-
-/* Pricelist */
-.pricelist {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; 
-  background-color: #404040;
-}
-.pricelist img {
-  max-width: 100%;
-  width: 700px;
-  height: auto;
-  max-height: 80vh; 
-}
 
 /*NEW DESIGN */
 #newdesign{
@@ -439,3 +425,49 @@ body{
 .newdesign-item:hover img {
   transform: scale(1.05);
 }
+
+
+/*PRICELIST*/
+  #price-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #404040;
+  }
+  
+  .price-item {
+    position: relative;
+    overflow: hidden;
+    padding: 0; 
+    margin-right: 40px; 
+    margin-left: 40px; 
+  }
+  
+  .price-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+    padding: 20px 0;
+    cursor: pointer; /* Change cursor to pointer when hovering over image */
+  }
+  .price-item:hover img {
+    transform: scale(1.05);
+  }
+  
+  
+  @media (max-width: 768px) {
+    /* Adjusting layout for smaller screens */
+    .price-item {
+      position: relative;
+      overflow: hidden;
+      padding: 0; 
+      margin-right: 40px; 
+      margin-left: 40px; 
+    }
+    
+    .price-item img {
+      width: 250px;
+      height: 400px;
+      margin: 0 auto; /* Center the image horizontally */
+    }
+  }

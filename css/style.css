@@ -29,6 +29,7 @@ body{
         width: 100px;
         margin-left: -10px;
         padding-right: 10px;
+        margin-top: 10px;
     }
   }
   
@@ -49,6 +50,7 @@ body{
     }
     .search-bar ::placeholder{
         font-size: 10px;
+        padding: 2px 2px;
       }
   }
   
@@ -75,7 +77,6 @@ body{
     .icons{
       margin-right: 62px;
       margin-bottom: 10px;
-      margin-top: 5px;
     }
     .icons i {
         font-size: 10px;
@@ -296,7 +297,7 @@ body{
   .image {
     width: calc(50% - 10px);
     border-radius: 5px;
-    margin: 5px; /* Added margin on all sides */
+    margin: 5px; 
   }
   .image:hover {
       transform: scale(1.2);
@@ -333,9 +334,9 @@ body{
     position: relative;
     overflow: hidden;
     margin-bottom: 20px;
-    padding: 0; /* Remove the vertical padding */
-    margin-right: 10px; /* Add margin to create space between images */
-    margin-left: 10px; /* Add margin to create space between images */
+    padding: 0; 
+    margin-right: 10px; 
+    margin-left: 10px; 
   }
   .gallery-item img {
     width: 100%;
@@ -407,14 +408,14 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Adjust this as needed */
+  height: 100vh; 
   background-color: #404040;
 }
 .pricelist img {
   max-width: 100%;
   width: 700px;
   height: auto;
-  max-height: 80vh; /* Adjust this as needed */
+  max-height: 80vh; 
 }
 
 /*NEW DESIGN */
@@ -424,16 +425,16 @@ body{
 .newdesign-item {
   position: relative;
   overflow: hidden;
-  margin-bottom: 20px;
-  padding: 0; /* Remove the vertical padding */
-  margin-right: 10px; /* Add margin to create space between images */
-  margin-left: 10px; /* Add margin to create space between images */
+  padding: 0; 
+  margin-right: 10px; 
+  margin-left: 10px; 
 }
 .newdesign-item img {
   width: 100%;
   height: auto;
   transition: transform 0.3s ease;
-  border-radius: 30px;
+  border-radius: 20%;
+  padding: 20px 0;
 }
 .newdesign-item:hover img {
   transform: scale(1.05);

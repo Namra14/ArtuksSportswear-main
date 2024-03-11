@@ -1,10 +1,25 @@
-/* HEADER */
+
 body{
   font-family: 'Oswald', sans-serif;
 }
 .html{
   scroll-behavior: smooth;
 }
+
+/*WAVING COLOR GRADIENT EFFECT */
+@keyframes animate{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
+
+/* HEADER */
 .header, .navigation{
   font-family: 'Oswald', sans-serif;
 }
@@ -14,8 +29,11 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background: linear-gradient(to right, black 40%, red 60%);
     height: 100px;
+    background: linear-gradient(-45deg, red, black, red, black);
+    background-size: 400% 400%;
+    animation: animate 15s ease infinite;
+    z-index: 1;
   }
   
   .logo {
@@ -144,23 +162,30 @@ body{
 
 /*SERVICES*/
 /* Custom Styles */
+#services{
+  background: linear-gradient(-45deg, white, grey, white, darkgrey);
+  background-size: 400% 400%;
+  animation: animate 15s ease infinite;
+  z-index: 1;
+}
 .services-container {
-  background-color: #f8f9fa;
   padding: 50px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
-  margin-bottom: 50px;
+  margin: 0 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   max-width: 100%;
-  overflow-x: auto; 
+  overflow-x: auto;
+  
 }
+
 .services-title {
   text-align: center;
   font-size: 2.5rem;
   font-weight: bold;
-  color: #333;
+  color: black;
   margin-bottom: 30px;
   width: 100%;
   font-family: 'Oswald', sans-serif;
@@ -266,8 +291,12 @@ body{
   
   /*2 boxes */
   #boxes{
-    background-color: #404040;
+    background: linear-gradient(-45deg,black, #404040, black, #404040);
+    background-size: 400% 400%;
+    animation: animate 15s ease infinite;
+    z-index: 1;
     font-family: 'Oswald', sans-serif;
+    
   }
   .box1 {
     width: 70%;
@@ -329,7 +358,10 @@ body{
 
   /*GALLERY*/
   #gallery{
-    background-color: #404040;
+    background: linear-gradient(-45deg, #5C6878, grey, #5C6878, grey);
+    background-size: 400% 400%;
+    animation: animate 15s ease infinite;
+    z-index: 1;
   }
   .gallery-item {
     position: relative;
@@ -407,7 +439,10 @@ body{
 
 /*NEW DESIGN */
 #newdesign{
-  background-color: #404040;
+  background: linear-gradient(-45deg, #727E70, grey, #727E70, darkgrey);
+  background-size: 400% 400%;
+  animation: animate 15s ease infinite;
+  z-index: 1;
 }
 .newdesign-item {
   position: relative;

@@ -229,13 +229,26 @@ strong {
 /*---------------------------------------
   CAROUSEL        
 -----------------------------------------*/
+/*WAVING COLOR GRADIENT EFFECT */
+@keyframes animate{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
+
 .hero-section {
-  background-image: url('../images/templatemo-wave-banner.jpg'), linear-gradient(black, #383838);
-  background-repeat: no-repeat;
-  background-size: 150% 150%;
-  background-position: top;
-  padding-top: 50px;
-  padding-bottom: 200px;
+  background: linear-gradient(-45deg,black, #404040, black, #404040);
+  background-size: 400% 400%;
+  animation: animate 15s ease infinite;
+  z-index: 1;
+  padding-top: 70px;
+  padding-bottom: 190px;
   margin-top: -9px;
 }
 
@@ -341,7 +354,7 @@ strong {
   background: var(--secondary-color);
 }
 
-/*CAROUSEL */
+/*CAROUSEL*/
 @media (max-width: 768px) {
   .hero-section{
     margin-bottom: -70px;
@@ -355,12 +368,11 @@ strong {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    margin: 0 auto;
-    margin-top: 50px;
-    padding: 5px;
-    height: 40px;
+    margin: 30px auto;
+    padding: 5px 5px 10px 5px; 
+    height: auto;
     z-index: 1000;
-    max-width: calc(70% - 30px); /* Limit the width of the dots container */
+    width: auto;
   }
   
   .owl-theme .owl-nav.disabled+.owl-dots {
@@ -371,7 +383,7 @@ strong {
     height: 6px; /* Reduce height of individual dot */
     background-color: #ddd; /* Adjust background color */
     border-radius: 50%; /* Make dots circular */
-    margin: 0 5px; /* Add space between dots */
+    margin: 0 3px; /* Add space between dots */
   }
   .owl-theme .owl-dots .owl-dot.active span, 
   .owl-theme .owl-dots .owl-dot:hover span {
